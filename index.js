@@ -251,13 +251,13 @@ Use copy to do the following:
 function listOfNames(array) {
   const copy = [];
   for(let i = 0; i < array.length; i++){
-    if(array[i].name.includes("")){
-      copy.slice(array[i]);
+    if (array[i].name.includes(' '))
+      copy.push(array[i]);
     }
-    return copy
-
+  let name2 = copy[2].name  
+  return name2
   }
-}
+
 console.log(listOfNames(artists));
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 5: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
